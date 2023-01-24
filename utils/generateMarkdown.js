@@ -123,7 +123,7 @@ ${data.usage}
 ## Credits
 ${data.contribution} 
 
-${renderLicenseSection(data.license)}
+${renderLicenseSection(data.license, data.fullName)}
 
 ## Features
 

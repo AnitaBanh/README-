@@ -1,8 +1,8 @@
-# e  
+# README Generator  
  ## Badges
     ![](https://img.shields.io/badge/license-MIT-orange)
 ## Description
-d 
+This application renders README 
 
 ## Table of Contents 
 
@@ -12,18 +12,18 @@ d
 - [License](#license)
 
 ## Installation
-g 
+none 
 
 ## Usage
-w 
+none 
 
 
 ## Credits
-jskldjfk  
+please contribute 
 
 ## License 
     MIT License
-Copyright (c) 2023 undefined
+Copyright (c) 2023 Jane Doe
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -48,11 +48,11 @@ SOFTWARE.
 If your project has a lot of features, list them here.
 
 ## How to Contribute
-jskldjfk 
+please contribute
 
 ## Tests
-fkjewp kkd
+test it a lot
 
 ## Questions
-<https://github.com/user>
-Please contact me with additional questions at e@mail.com
+<https://github.com/janedoe>
+Please contact me with additional questions at janedoe@gmail.com
