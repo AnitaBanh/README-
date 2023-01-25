@@ -36,3 +36,5 @@
   ## Questions
   <https://github.com/AnitaBanh>
   Please contact me with additional questions at anitabanhtx@gmail.com.
+  
+  Link to walkthrough video: https://drive.google.com/file/d/1eL06B5uTRGs3Gy6YyfZvi4UpDUvIgTEQ/view
