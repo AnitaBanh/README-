@@ -7,11 +7,6 @@ const questions = () => {
   return inquirer.prompt([
     {
       type: "input",
-      message: "What is your FULL NAME?",
-      name: "fullName",
-    },
-    {
-      type: "input",
       message: "What is the project title?",
       name: "title",
     },
@@ -42,7 +37,7 @@ const questions = () => {
     },
     {
       type: "list",
-      message: "What license is applicable to his project?",
+      message: "What license is applicable to this project?",
       name: "license",
       choices: ["Apache-2.0", "GNU GPLv2", "GNU GPLv3", "ISC", "MIT"],
     },
@@ -56,19 +51,24 @@ const questions = () => {
       message: "What is your email address?",
       name: "email",
     },
+    {
+      type: "input",
+      message: "What is your FULL NAME?",
+      name: "fullName",
+    },
   ]);
 };
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
   var markdownString = generateMarkdown(data);
   fs.writeFile(fileName, markdownString, (err) => {
-    return err ? console.log(err) : console.log("Success!");
+    return err ? console.log(err) : console.log("README.md was sucessfully created!");
   });
 }
 
 // TODO: Create a function to initialize app
 function init() {
-  questions().then((answers) => writeToFile("newREADME.md", answers));
+  questions().then((answers) => writeToFile("README.md", answers));
 }
 
 // Function call to initialize app
