@@ -1,28 +1,27 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license == null) {
+  if (license == "") {
     return "";
   }
   {
-    return `## Badges
-    ![](https://img.shields.io/badge/license-${license}-orange)`;
+    return `![](https://img.shields.io/badge/license-${license}-orange)`;
   }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license == null) {
+  if (license == "") {
     return "";
   }
-  return `- [License](#license)`;
+  return "- [License](#license)";
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license, fullName) {
-  if (license == null) {
+  if (license == "") {
     return "";
   }
   const currentYear = new Date().getFullYear();
@@ -76,44 +75,36 @@ function renderLicenseSection(license, fullName) {
 }
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}  
- ${renderLicenseBadge(data.license)}
-## Description
-${data.description} 
+  return `# ${data.title} 
+  ${renderLicenseBadge(data.license)}
+  ## Description
+  ${data.description} 
 
-## Table of Contents 
+  ## Table of Contents 
 
-- [Installation](##installation)
-- [Usage](#usage)
-- [Credits](#credits)
-${renderLicenseLink(data.license)}
+  - [Installation](##installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+  ${renderLicenseLink(data.license)}
 
-## Installation
-${data.installation} 
+  ## Installation
+  ${data.installation} 
 
-## Usage
-${data.usage} 
+  ## Usage
+  ${data.usage} 
+  
+  ${renderLicenseSection(data.license, data.fullName)}
+  ## Contributing
+  ${data.contribution} 
 
+  ## Tests
+  ${data.testInstructions}
 
-## Credits
-${data.contribution} 
-
-${renderLicenseSection(data.license, data.fullName)}
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-${data.contribution}
-
-## Tests
-${data.testInstructions}
-
-## Questions
-<https://github.com/${data.username}>
-Please contact me with additional questions at ${data.email}
-`;
+  ## Questions
+  <https://github.com/${data.username}>
+  Please contact me with additional questions at ${data.email}.`;
 }
 
 module.exports = generateMarkdown;

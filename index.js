@@ -39,7 +39,7 @@ const questions = () => {
       type: "list",
       message: "What license is applicable to this project?",
       name: "license",
-      choices: ["Apache-2.0", "GNU GPLv2", "GNU GPLv3", "ISC", "MIT"],
+      choices: ["", "Apache-2.0", "GNU GPLv2", "GNU GPLv3", "ISC", "MIT"],
     },
     {
       type: "input",
